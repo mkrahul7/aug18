@@ -28,6 +28,7 @@ public class A extends HttpServlet {
 		String name= request.getParameter("name");
 		String pw= request.getParameter("pw");
 		try {
+			//this is try catch block
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/roc", "root", "test");
 			Statement cr= con.createStatement();
